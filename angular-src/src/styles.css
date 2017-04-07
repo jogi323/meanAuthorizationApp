@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: #254f56;
+    color:white;
+
+}
+input.ng-invalid {
+    border: 1px solid red !important;
+}
+
+input.ng-pristine {
+    border: 1px solid green !important;
+}
+
+.error {
+    color: red;
+    padding: 5px;
+} 
+.alert.flash-message.alert-danger {
+    text-align: center;
+}
+.alert.flash-message.alert-success {
+    text-align: center;
+}
+.alert.flash-message.alert-warning {
+    text-align: center;
+}
+.typeahead-input-has-selection[_ngcontent-gjr-10] {
+    height: 40px !important;
+}
+.typeahead-input {
+    background-color: #14586d !important;
+    color: white;
+    height:35px !important;
+    width:200px !important;
+ 
+}

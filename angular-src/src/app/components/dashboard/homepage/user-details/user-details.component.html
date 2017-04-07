@@ -1,0 +1,35 @@
+<div *ngIf="userDetails">
+  <div class="table-responsive">
+    <img *ngIf='userDetails.image' src={{userDetails.image}}>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Emp.Id</b> </td>
+          <td>{{userDetails.empId}}</td>
+        </tr>
+        <tr>
+          <td><b>Name</b> </td>
+          <td>{{userDetails.firstName + " " + userDetails.lastName}}</td>
+        </tr>
+        <tr>
+          <td><b>Email-Id</b> </td>
+          <td>{{userDetails.email}}</td>
+        </tr>
+        <tr>
+          <td><b>mobileNumber</b> </td>
+          <td>{{userDetails.mobileNumber}}</td>
+        </tr>
+        <!--<tr>
+          <td><b>Image</b> </td>
+          <td><img src={{userDetails.image}}></td>
+        </tr>-->
+      </tbody>
+    </table>
+  </div>
+</div>

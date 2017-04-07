@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Emp.Id</th>
+          <th>Name</th>
+          <th>Email-Id</th>
+          <th>DOB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of usersdata; let i= index">
+          <td>{{i+1}}</td>
+          <td>{{user.empId}}</td>
+          <td><a (click)="userDetails(user)" >{{user.firstName + " " + user.lastName}}</a></td>
+          <td>{{user.email}}</td>
+          <td>{{user.dob | date: 'dd-MM-yyyy'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
