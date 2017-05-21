@@ -25,7 +25,7 @@ check:any;
    // To generate OTP
 generateOtp(user){
   if(!this.isTrue){
-  this.FpService.url="users/generateOtp";
+  this.FpService.url="http://localhost:8080/users/generateOtp";
   this.FpService.data=user;
   this.FpService.postService().subscribe(res=>{
     console.log(res);
@@ -42,7 +42,7 @@ generateOtp(user){
 }
 //To check OTP
 else if(this.isTrue){
-  this.FpService.url="users/checkOtp";
+  this.FpService.url="http://localhost:8080/users/checkOtp";
   this.FpService.data=user;
   console.log(user['email']);
   this.FpService.postService().subscribe(res=>{
@@ -61,7 +61,7 @@ else if(this.isTrue){
 }
 }
 resendOtp(user){
-  this.FpService.url="users/generateOtp";
+  this.FpService.url="http://localhost:8080/users/generateOtp";
   this.FpService.data=user;
   this.FpService.postService().subscribe(res=>{
     console.log(res);
