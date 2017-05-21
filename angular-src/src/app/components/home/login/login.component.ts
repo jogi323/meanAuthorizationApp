@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
   loginuser(user) {
     this.LoginService.data = user;
-    this.LoginService.url = "users/login";
+    this.LoginService.url = "http://lovalhost:8080/users/login";
     this.LoginService.postService().subscribe(res => {
       // console.log(res);
       this.data=res["_body"];
