@@ -44,7 +44,7 @@ myReader.readAsDataURL(file);
 }
 registeruser(user) {
 this.RegisterService.data = user; 
-this.RegisterService.url = "users/register";
+this.RegisterService.url = "http://localhost:8080/users/register";
 this.RegisterService.postService().subscribe(res =>  {
 console.log(res); 
 this.data = res["_body"]; 
