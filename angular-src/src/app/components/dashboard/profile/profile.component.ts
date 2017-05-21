@@ -20,7 +20,7 @@ id;
       this.id=email['_id'];
     //console.log(this.id);
     this.AppService.data={'id':this.id};
-    this.AppService.url='users/searchuser';
+    this.AppService.url='http://localhost:8080/users/searchuser';
     //console.log(this.AppService.url);
     //this.profileService.data={"id":email['_id']};
     this.AppService.postService().subscribe(res=>{
