@@ -29,7 +29,7 @@ dataObj2:any[];
     //console.log(email);
     //console.log(email['email']);
     this.FinduserService.data={"email":email['email']};
-    this.FinduserService.url="users/search";
+    this.FinduserService.url="http://localhost:8080/users/search";
     this.FinduserService.postService().subscribe(res=>{this.data=res.json()
       //console.log(this.data)
       this.selected ='' ;
@@ -63,7 +63,7 @@ dataObj2:any[];
    
 if(this.dataObj2[0]){
    this.FinduserService.data={"id":this.dataObj2[0]._id};
-    this.FinduserService.url='users/searchuser';
+    this.FinduserService.url='http://localhost:8080/users/searchuser';
     this.FinduserService.postService().subscribe(res=>{
        //console.log('2nd time');
      //console.log(res);
