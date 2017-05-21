@@ -27,7 +27,7 @@ resetPassword(user){
      console.log(this.data);
      user.email=this.data['email'];
      console.log(user.email);
-    this.RpService.url="users/resetPassword";
+    this.RpService.url="http://localhost:8080/users/resetPassword";
     this.RpService.data=user;
     console.log(this.RpService.data);
     this.RpService.postService().subscribe(res=>{
